@@ -1,23 +1,41 @@
-import logo from './logo.svg';
+import { useRef } from 'react';
 import './App.css';
+import { AlertDialog, AlertDialogBody, AlertDialogCloseButton, AlertDialogContent, AlertDialogFooter, AlertDialogHeader, AlertDialogOverlay, Box, Button, Card, Heading, ScaleFade, Text, useDisclosure} from '@chakra-ui/react';
 
 function App() {
+  const {isOpen , onOpen, onClose} = useDisclosure()
+  const cancelRef = useRef()
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Card h='200px' w='200px' bg='pink.100' m='30px' >
+        <Heading as='h4' fontSize='3xl'>Thinkpad T470s</Heading>
+        <Text>price: 900.00 $</Text>
+        <Button m='30px 10px 0' bg='pink.700' color='white' onClick={onOpen}>Add to cart</Button>
+      </Card>
+      <ScaleFade>
+      <AlertDialog
+      motionPreset='slideInBottom'
+        leastDestructiveRef={cancelRef}
+        onClose={onClose}
+        isOpen={isOpen}
+        isCentered
+      >
+        <AlertDialogOverlay>
+          <AlertDialogContent>
+          <AlertDialogHeader>sucsess</AlertDialogHeader>
+          <AlertDialogBody>
+            The product was add to the cart
+          </AlertDialogBody>
+          <AlertDialogFooter>
+            <Button ref={cancelRef} colorScheme='green' onClick={onClose}>
+              OK
+            </Button>
+          </AlertDialogFooter>
+          </AlertDialogContent>
+        </AlertDialogOverlay>
+      </AlertDialog>
+      </ScaleFade>
     </div>
   );
 }
