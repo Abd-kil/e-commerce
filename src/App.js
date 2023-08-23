@@ -1,6 +1,6 @@
 import { useRef } from 'react';
 import './App.css';
-import { AlertDialog, AlertDialogBody, AlertDialogCloseButton, AlertDialogContent, AlertDialogFooter, AlertDialogHeader, AlertDialogOverlay, Box, Button, Card, Heading, ScaleFade, Text, useDisclosure} from '@chakra-ui/react';
+import { AlertDialog, AlertDialogBody,  AlertDialogContent, AlertDialogFooter, AlertDialogHeader, AlertDialogOverlay, Button, Card, Heading, ScaleFade, Text, useDisclosure} from '@chakra-ui/react';
 
 function App() {
   const {isOpen , onOpen, onClose} = useDisclosure()
