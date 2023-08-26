@@ -1,0 +1,23 @@
+[33mcommit aadc49364bab8cd042ca76042c7bb57f0edfdf86[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: abdulrahman <abood.kil2003123@gmail.com>
+Date:   Sat Aug 26 08:16:59 2023 +0300
+
+    Adding the pages files
+
+[33mcommit d5d92e7222ce0a7d5294c15fba618b42522fc4dd[m[33m ([m[1;31morigin/master[m[33m)[m
+Author: abdulrahman <abood.kil2003123@gmail.com>
+Date:   Wed Aug 23 11:14:50 2023 +0300
+
+    Add project files
+
+[33mcommit 2e4e763ab9309b1cc0657372ef8f6207f466196a[m
+Author: abdulrahman <abood.kil2003123@gmail.com>
+Date:   Wed Aug 23 09:31:06 2023 +0300
+
+    created the project
+
+[33mcommit b5d6488fe91731af20eb3c561cace6a0b25998cc[m
+Author: abdulrahman <abood.kil2003123@gmail.com>
+Date:   Mon Aug 21 19:12:06 2023 +0300
+
+    Initialize project using Create React App
