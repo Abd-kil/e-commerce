@@ -28,7 +28,7 @@ function App() {
             The product was add to the cart
           </AlertDialogBody>
           <AlertDialogFooter>
-            <Button ref={cancelRef} colorScheme='red' onClick={onClose}>
+            <Button ref={cancelRef} colorScheme='green' onClick={onClose}>
               OK
             </Button>
           </AlertDialogFooter>
